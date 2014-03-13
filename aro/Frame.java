@@ -3,11 +3,18 @@ import java.awt.*;
 
 public class Frame {
 	public static void main(String[] args) {
-		JFrame frame = new JFrame("Test Frame");
+		BackgroundImage frame = new BackgroundImage(); 
+		frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE); 
+		frame.setSize(300, 300); 
+		frame.setLocationRelativeTo(null); 
+		frame.setVisible(true); 
+		/*JFrame frame = new JFrame("Test Frame");
 		JButton button = new JButton("Click me!");
 		JTextField textField = new JTextField("prova text-field");
 		frame.setLayout(new GridBagLayout());
 		GridBagConstraints gbc = new GridBagConstraints();
+		ImageIcon img = new ImageIcon("back.png");
+		img.getImage();
 
 		gbc.gridx = 1;
 		gbc.gridy = 1;
@@ -23,6 +30,6 @@ public class Frame {
 		frame.setLocation(200,200);
 		frame.setVisible(true);
 		frame.setResizable(true);
-		frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
+		frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);*/
 	}
 }
